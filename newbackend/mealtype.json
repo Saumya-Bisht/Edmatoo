@@ -1,0 +1,32 @@
+db.mealType.insertMany([
+    {
+        "_id":1,
+        "name": "Breakfast",
+        "mealtype":1
+    },
+    {
+        "_id":2,
+        "name": "Lunch",
+        "mealtype":2
+    },
+     {
+        "_id":3,
+        "name": "Dinner",
+        "mealtype":3
+    },
+     {
+        "_id":4,
+        "name": "Snacks",
+        "mealtype":4
+    },
+     {
+        "_id":5,
+        "name": "Drinks",
+        "mealtype":5
+    },
+     {
+        "_id":6,
+        "name": "Nightlife",
+        "mealtype":6
+    }
+])

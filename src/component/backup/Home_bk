@@ -1,0 +1,40 @@
+import React from 'react';
+import './Header.css'
+class Home extends React.Component{
+    constructor(){
+        super()
+
+
+        this.state={
+            title:"Home Page",
+            keyword:"User Text Here"
+        }
+    }
+
+
+    handleChange =(event) =>{
+        console.log(event.target.value)
+        this.setState({keyword:event.target.value?event.target.value:"user text here"})
+    }
+    render(){
+        
+        return(
+            <React.Fragment>
+                <header>
+                <div className="logo">{this.state.title}</div>
+                <center>
+                   
+                    <input type="text" onChange={this.handleChange}/>
+                    <div style={{color:'white'}}>{this.state.keyword}</div>
+                    
+                </center>
+               
+                </header>
+                <hr/>
+            </React.Fragment>
+        )
+
+    }
+}
+
+export default Home;
